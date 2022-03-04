@@ -1,0 +1,55 @@
+@import './colors.module.scss';
+
+.main {
+    background-color: $secondary-navbar-background;
+    width: 100%;
+    color: #fff;
+
+    .content {
+        max-width: 1200px;
+        margin: auto;
+        padding: 10px 0px;
+        display: flex;
+
+        .title {
+            color: $primary-text-color;
+        }
+
+        .link {
+            display:inline-flex;
+            margin: 0px 20px 0px 20px;
+            font-weight: bold;
+            padding: 14px 0px 0px 0px;
+
+            .links {
+                cursor: pointer;
+                border-radius: 5px;
+                padding: 5px 22px 5px 22px;
+                transition: 0.2s;
+                color: $primary-inactivetext-color;
+
+                &:hover {
+                    color: $primary-text-color;
+                    background-color: $secondary-text-color;
+                }
+            }
+        }
+
+        .media {
+            display:inline-flex;
+            padding: 10px 0px 0px 0px;
+            margin-left:auto;
+
+            .medialink {
+                color: $primary-inactivetext-color;
+                cursor: pointer;
+                margin-left: 20px;
+                transition: 0.2s;
+
+                &:hover {
+                    color: $primary-text-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import './colors.module.scss';
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+
+  .row {
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 0px;
+        margin: auto;
+    
+        .card {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        
+            border-radius: 5px;
+            height: 20px;
+            margin: 10px 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 20px 0px 40px 0px;
+            text-align: center;
+            color: #000;
+            background-color: #f1f1f1;
+            font-size: 100%;
+            transition: 0.2s;
+        
+            &:hover {
+                outline:0;
+                outline: 2px solid #ed6a5a;
+                cursor: pointer;
+            }
+        
+            &:active {
+                outline:0;
+                background-color: #BA6B6B;
+                color: #f1f1f1;
+                transform: translateY(6px);
+            }
+        }
+    }
+}
+}
