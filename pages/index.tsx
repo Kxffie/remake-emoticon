@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import Head from "next/head";
+import styles from "../styles/Home.module.scss";
 
-import { faces } from '../public/db';
+import { faces } from "../public/db";
 
 export default function Home() {
   return (
@@ -17,12 +17,16 @@ export default function Home() {
 
         <div className={styles.row}>
           {faces.map((faces) => (
-            <div key="faces" className={styles.column} onClick={() =>  navigator.clipboard.writeText(faces.face)}>
+            <div
+              key="faces"
+              className={styles.column}
+              onClick={() => navigator.clipboard.writeText(faces.face)}
+            >
               <div className={styles.card}>{faces.face}</div>
             </div>
           ))}
         </div>
       </main>
     </div>
-  )
+  );
 }
